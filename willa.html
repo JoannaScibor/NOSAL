@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+function obliczenia() {
+var dorosli= document.forms['pobyt'].dorosle.value;
+var dzieciaki= document.forms['pobyt'].dzieci.value;
+var doby= document.forms['pobyt'].noclegi.value;
+var wynik=(Number(dorosli)+(Number(dzieciaki))/2)*Number(doby)*120;
+document.getElementById('obliczono').innerHTML="Wczasy dla Twojej rodziny wyniosą: "+wynik+" zł."
+
+
+}
+</script>
+</head>
+<body>
+<div id="pojemnik">
+<div id="pok" style="text-align:center; font-size:67px;letter-spacing:8px; font-family:Arial; text-shadow:1px  5px blue;">Sprawdź ofertę na lato 2019!</div>
+<div id="pojemnik1">
+</br><h1>Wakacyjny pobyt w górach</h1>
+<h3>Sprawdź ofertę </br>"Willi Pod Nosalem"</h3>
+<form action="" name="pobyt">
+Ilość osób dorosłych:  <input type="text" name="dorosle"></br>
+Ilość dzieci (do 13 lat):  <input type="text" name="dzieci"></br>
+Ilość noclegów:  <input type="text" name="noclegi"></br>
+</br><input type = "button" style="width:70%" value="oblicz koszt pobytu" name="policz" onclick="obliczenia()">
+</br></br><span id  = "obliczono" style="color:purple;text-decoration:underline;"><em></em></span>
+</form>
+</div>
+<div id="pojemnik2">
+</div>
+</div>
+<div id="stopka"></br>**Made by JŚ (czerwiec 2019)**</div>
+</body>
+
+</html> 

@@ -1,0 +1,17 @@
+#pojemnik1, #pojemnik2 {
+	
+	float:left;
+	width:48%;
+	height:500px;
+	text-align:right;
+	vertical-align:middle;
+	font-size:25px;
+	border: 1px double blue;
+}
+#pojemnik2 {
+	background-image:URL(gory.jpg);
+}
+#stopka {
+	clear:both;
+	text-align:center;
+}
